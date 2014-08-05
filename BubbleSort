@@ -1,0 +1,15 @@
+def bubblesort(lista):
+    swap = True
+    n = len(lista) - 1
+    while swap:
+        swap = False
+        i = 0
+        while i < n:
+            if lista[i] > lista[i + 1]:
+                temp = lista[i] 
+                lista[i] = lista[i + 1]
+                lista[i + 1] = temp
+                swap = True
+            i += 1
+        n -= 1
+    return lista
