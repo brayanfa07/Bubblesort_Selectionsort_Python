@@ -40,6 +40,7 @@ def bubblesort(lista):
 
   ###### Resultados
 
+  La tasa de crecimiento de la función se incrementa con una función de *O(n)*, en el cual se mantiene de la misma manera sin importar el tamaño del arreglo que reciba por parámetro al inicio de la función.
 
 
 
@@ -78,6 +79,8 @@ def menor(lista):
 
 
 ###### Resultados
+
+El resultado de la función se mantiene de la misma manera que en el mismo sistema, de tal manera que la tasa de crecimiento se produce en un tiempo de O(n), el cual no varía según el parámtero que ingrese en el sistema.
 
 
   
