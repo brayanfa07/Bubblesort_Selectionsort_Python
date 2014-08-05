@@ -1,0 +1,14 @@
+def selection_sort(lista):
+
+    m = 0
+    for i in range(0, len(lista)):
+        if lista[i] < lista[m]:
+            m = i
+			
+			
+    for i in range(0, len(lista)):
+        m = i + m
+        temp = lista[m]
+        lista[m] = lista[i]
+        lista[i] = temp
+    return lista
