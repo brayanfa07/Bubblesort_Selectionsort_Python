@@ -52,18 +52,20 @@ El rango de parámtro a definir consiste en un solo arreglo o lista con al menos
 
 ```
 def selection_sort(lista):
+    for i in range(0, len(lista)):
+        m = i+menor(lista[i:])
+        temp = lista[m]
+        lista[m] = lista[i]
+        lista[i] = temp
+        #print(i, m, lista, lista[i:])
+    return lista
 
+def menor(lista):
     m = 0
     for i in range(0, len(lista)):
         if lista[i] < lista[m]:
             m = i
-
-    for i in range(0, len(lista)):
-        m = i + m
-        temp = lista[m]
-        lista[m] = lista[i]
-        lista[i] = temp
-    return lista```
+    return m```
 
 
 
