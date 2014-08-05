@@ -1,0 +1,37 @@
+**Tecnológico de Costa Rica** - Escuela de Ingeniería en Computación
+
+IC3002 Análisis de Algoritmos - Prof. Mauricio Rojas Fernández
+
+**201157035 --- Brayan Fajardo Alvarado --- Fecha: 6 de agosto del 2014**
+
+*Tarea 1. Análisis de Algoritmos*
+
+#### BubbleSort
+
+###### Hipótesis del algoritmo
+
+* Se espera que el resultado del algoritmo debe mostrar un arreglo en orden, que contenga sus números ordenados de manera ascendete.
+
+###### Definición de parámetros
+
+* El parámetro de entrada del algoritmo se da en un rango de 3 elementos como mínimo por arreglo, ya que esto permite incluir varios elementos, y a su vez, comprobar el orden en el que se encuentran en sus estado final.
+
+```
+def bubblesort(lista):
+    swap = True
+    n = len(lista) - 1
+    while swap:
+        swap = False
+        i = 0
+        while i < n:
+            if lista[i] > lista[i + 1]:
+                temp = lista[i]
+                lista[i] = lista[i + 1]
+                lista[i + 1] = temp
+                swap = True
+            i += 1
+        n -= 1
+    return lista```
+    
+    
+  ###### Definición de parámetros  
