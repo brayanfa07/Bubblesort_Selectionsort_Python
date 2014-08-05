@@ -51,7 +51,7 @@ Con este algoritmo de ordenamiento, se espera recibir una lista que permita orde
 El rango de parámtro a definir consiste en un solo arreglo o lista con al menos 3 elementos.
 
 ```
-def selection_sort(lista):
+def selectionsort(lista):
     for i in range(0, len(lista)):
         m = i+menor(lista[i:])
         temp = lista[m]
